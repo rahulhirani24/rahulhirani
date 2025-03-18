@@ -17,9 +17,9 @@ const Experience = () => {
       duration: "August 2022 - Present",
       location: "Bangalore, India",
       description: [
-        "Build and maintain monorepo tooling and infrastructure to support 2K+ frontend developers across the company, improving scalability and developer experience.",
+        "Building and maintaining Atlassian's frontend monorepo tooling and infrastructure to support 2K+ developers company-wide while improving scalability and developer experience.",
         "Led the Yarn upgrade from v1 to Yarn Berry, optimizing package management and overall build performance, saving 81 build hours per week.",
-        "Led the ESLint migration to Flat Config and Node upgrade to v20 for Jira,streamlining development workflows.",
+        "Led the ESLint migration to Flat Config and Node upgrade to v20 for Jira, streamlining development workflows.",
         "Contributed to the implementation of Facts Map, a dependency-based CI optimization package that reduced build time by 40%, saving 5 engineering years.",
       ],
     },

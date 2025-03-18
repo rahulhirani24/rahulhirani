@@ -5,6 +5,12 @@ import ButtonCustom from "../ui/button-custom";
 const About = () => {
   const highlights = [
     {
+      icon: <Briefcase className="h-5 w-5 text-primary" />,
+      title: "8+ Years Experience",
+      description:
+        "Working with modern frontend frameworks and design systems.",
+    },
+    {
       icon: <Code className="h-5 w-5 text-primary" />,
       title: "Clean Code",
       description:
@@ -15,12 +21,6 @@ const About = () => {
       title: "Responsive Design",
       description:
         "Creating interfaces that work flawlessly across all devices and screen sizes.",
-    },
-    {
-      icon: <Briefcase className="h-5 w-5 text-primary" />,
-      title: "8+ Years Experience",
-      description:
-        "Working with modern frontend frameworks and design systems.",
     },
     {
       icon: <User className="h-5 w-5 text-primary" />,
