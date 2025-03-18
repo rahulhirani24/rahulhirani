@@ -1,5 +1,6 @@
 import { Briefcase, Building2, Calendar } from "lucide-react";
 import SectionHeading from "../common/SectionHeading";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface ExperienceItem {
   title: string;
@@ -10,6 +11,8 @@ interface ExperienceItem {
 }
 
 const Experience = () => {
+  const isMobile = useIsMobile();
+
   const experiences: ExperienceItem[] = [
     {
       title: "Senior Frontend Engineer",
@@ -67,6 +70,57 @@ const Experience = () => {
       ],
     },
   ];
+
+  if (isMobile) {
+    return (
+      <section
+        id="experience"
+        className="section-padding bg-secondary/30 dark:bg-secondary/10"
+      >
+        <div className="container px-4 mx-auto">
+          <SectionHeading
+            title="Work Experience"
+            subtitle="My Journey"
+            centered
+          />
+
+          <div className="mt-16 space-y-8">
+            {experiences.map((exp, index) => (
+              <div
+                key={index}
+                className="bg-background dark:bg-secondary/20 shadow-sm border border-border dark:border-border/20 rounded-lg p-6"
+              >
+                <div className="flex items-center gap-2 mb-2 text-primary">
+                  <Briefcase className="h-4 w-4" />
+                  <h3 className="font-bold">{exp.title}</h3>
+                </div>
+
+                <div className="flex items-center gap-2 mb-2 text-muted-foreground">
+                  <Building2 className="h-4 w-4" />
+                  <span>{exp.company}</span>
+                  <span>•</span>
+                  <span>{exp.location}</span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground">
+                  <Calendar className="h-4 w-4" />
+                  <span>{exp.duration}</span>
+                </div>
+
+                <ul className="text-sm space-y-2">
+                  {exp.description.map((item, i) => (
+                    <li key={i} className="text-muted-foreground">
+                      • {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
