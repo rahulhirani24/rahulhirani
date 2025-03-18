@@ -5,6 +5,7 @@
   "type": "module",
   "author": "Rahul Hirani",
   "license": "MIT",
+  "homepage": "https://rahulhirani24.github.io/rahulhirani",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
