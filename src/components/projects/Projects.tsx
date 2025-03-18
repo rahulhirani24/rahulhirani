@@ -1,7 +1,5 @@
 import SectionHeading from "../common/SectionHeading";
 import ProjectCard, { ProjectData } from "./ProjectCard";
-import portfolioWebsiteImg from "../../../public/pw.png";
-import searchDependencyImg from "../../../public/sd.png";
 
 const Projects = () => {
   const projects: ProjectData[] = [
@@ -10,7 +8,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description:
         "A minimalist, responsive portfolio website for creatives with smooth animations and an interactive project showcase.",
-      image: portfolioWebsiteImg,
+      image: "/pw.png",
       tags: ["React", "TypeScript", "Tailwind"],
       githubUrl: "#",
       liveUrl: "#",
@@ -20,7 +18,7 @@ const Projects = () => {
       title: "Search Dependencies",
       description:
         "A VSCode extension with 350+ downloads, created for seaching the dependency usages in a monorepo.",
-      image: searchDependencyImg,
+      image: "/sd.png",
       tags: ["JavaScript"],
       githubUrl: "https://github.com/arhirani/SearchDependencies",
       marketplaceUrl:

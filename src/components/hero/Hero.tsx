@@ -1,6 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import ButtonCustom from "../ui/button-custom";
-import ProfileImg from "../../../public/profileImg.png";
 
 const Hero = () => {
   return (
@@ -36,11 +35,7 @@ const Hero = () => {
               <a href="#projects">
                 <ButtonCustom>View Projects</ButtonCustom>
               </a>
-              <a
-                href="../../../public/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <ButtonCustom variant="outline">Download Resume</ButtonCustom>
               </a>
             </div>
@@ -83,7 +78,7 @@ const Hero = () => {
                 <div className="absolute inset-0 z-10 mix-blend-multiply"></div>
                 <div className="absolute inset-0 z-5 opacity-20 bg-[radial-gradient(#444_1px,transparent_1px)] [background-size:16px_16px]"></div>
                 <img
-                  src={ProfileImg}
+                  src="/profileImg.png"
                   alt="Rahul Hirani"
                   className="w-full h-full object-cover object-center opacity-60"
                   loading="lazy"
